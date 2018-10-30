@@ -7,7 +7,6 @@ console.log(topOfName);
 
 function fixNav() {
     if (window.scrollY > topOfName) {
-        document.body.style.paddingTop = nav.offsetHeight + 'px';
         document.body.classList.add('fixed-nav');
     } else {
         document.body.classList.remove('fixed-nav');
