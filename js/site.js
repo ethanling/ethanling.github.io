@@ -13,5 +13,3 @@ function fixNav() {
         document.body.style.paddingTop = 0;
     }
 }
-
-window.addEventListener('scroll', fixNav);
