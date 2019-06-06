@@ -89,7 +89,7 @@ nav {
     height: 60px;
     background: #24272D;
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 1;
     top: 0;
 }
@@ -118,7 +118,7 @@ li.logo {
     height: 100%;
     max-width: 0;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: all 0.35s;
     font-weight: 600;
     font-size: 24px;
     text-transform: uppercase;
@@ -148,7 +148,7 @@ nav a:hover {
 
 div.wrapper {
     width: 100%;
-    margin-top: 120px;
+    padding: 20px;
 }
 
 div.content {
@@ -185,7 +185,6 @@ div.card {
 
 .card ul {
     font-size: 18px;
-    text-align: left;
 }
 
 .card li {
@@ -212,7 +211,8 @@ img.headshot-img {
 }
 
 div.projects-banner {
-    
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 div.projects-container {
@@ -223,7 +223,6 @@ div.projects-item {
     flex: 1;
     max-width: 30%;
     margin: 20px auto;
-    background-color: red;
     box-shadow: 0px 0px 15px #24272D;
     transition: all .2s;
 }
@@ -268,7 +267,6 @@ footer p {
 
 @media only screen and (max-width: 750px) {
     .content { max-width: 100%; }
-    .wrapper { padding: 20px; }
     .fixed-nav li.logo { max-width: 0px;}
 }
 
