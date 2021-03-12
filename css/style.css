@@ -190,7 +190,7 @@ div.card {
 .card li {
     line-height: 28px;
     /*list-style-type: disc;*/
-    text-align: center;
+    padding-left: 2em;
 }
 
 div.headshot-circle {
