@@ -2,6 +2,7 @@
     --bg: #000;
     --text: rgba(236, 237, 239, .8);
     --text-alt: rgba(236, 237, 239, .6);
+    --text-dark: rgba(255,255,255,0.3);
 }
 html {
     box-sizing: border-box;
@@ -47,12 +48,23 @@ h1 {
 }
 
 footer {
-    color: rgba(255,255,255,0.3);
+    color: var(--text-dark);
     padding-bottom: 1rem;
     font-size: .7rem;
 }
 
-img.banner-img {
+.time {
+    padding-top: 1rem;
+    font-size: .7rem;
+    color: var(--text-dark);
+}
+
+.time a {
+    color: var(--text-dark);
+    text-transform: lowercase;
+}
+
+.banner-img {
     height: 400px;
     opacity: 0.7;
     flex: 1;
