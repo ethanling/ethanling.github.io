@@ -41,16 +41,21 @@ a:visited {
 h1 {
     text-transform: lowercase;
     font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: .3rem;
-    margin-right: -.3rem;
+    font-weight: 300;
+    letter-spacing: .7rem;
+    margin-right: -.7rem;
     margin-bottom: .3rem;
+    color: var(--text);
 }
 
 footer {
     color: var(--text-dark);
     padding-bottom: 1rem;
     font-size: .7rem;
+}
+
+footer p {
+    text-transform: lowercase;
 }
 
 .time {
