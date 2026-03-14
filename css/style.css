@@ -32,7 +32,6 @@ a {
 
 a:hover {
     color: var(--bg);
-    background: var(--text);
     text-decoration: underline;
 }
 
