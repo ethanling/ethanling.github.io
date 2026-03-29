@@ -28,11 +28,37 @@ body {
 a {
     color: var(--text);
     text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+a::before, a::after {
+    content: '[';
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+a::after {
+    content: ']';
+    right: -9px;
+    transform: translateY(100%);
+}
+
+a::before {
+    left: -9px;
+    transform: translateY(100%);
 }
 
 a:hover {
     color: var(--bg);
-    text-decoration: underline;
+}
+
+a:hover::before, a:hover::after {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 a:visited {
