@@ -53,7 +53,7 @@ a::before {
 }
 
 a:hover {
-    color: var(--bg);
+    color: var(--text);
 }
 
 a:hover::before, a:hover::after {
@@ -97,7 +97,8 @@ footer p {
 }
 
 .banner-img {
-    height: 400px;
+    max-height: 400px;
+    width: auto;
     opacity: 0.7;
     flex: 1;
 }
